@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e304331eea1166b42aa6da22c45c5a04
+guid: ce0a59f6e4b026745a43017cc04ce420
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638733693008559878
+  platformSettingsDirtyTick: 638733681418267087
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: BortalSkullGun
     originalName: 
-    pivot: {x: 0.5, y: -0.6}
+    pivot: {x: 0.8888889, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 15
-    spriteID: e8960598e48f6414bba7ac4a20699d34
+      width: 9
+      height: 6
+    spriteID: 9112e55fc213e624482661f817467cd6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,54 +144,24 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.6428572}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 27
-      width: 12
-      height: 14
-    spriteID: a671798f576ccd24e829bece76ef31a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 27}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1860788623
-    name: BortalSkullIdle
+    guid: -888367209
+    name: BortalSkullGun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: BortalSkullGun
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 10
-        y: 9
-        width: 12
-        height: 15
-      spriteId: e8960598e48f6414bba7ac4a20699d34
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 9
-        width: 12
-        height: 14
-      spriteId: a671798f576ccd24e829bece76ef31a3
+        x: 0
+        y: 0
+        width: 9
+        height: 6
+      spriteId: 9112e55fc213e624482661f817467cd6
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -231,8 +201,32 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 32, y: 64}
+  canvasSize: {x: 16, y: 16}
+  previousTextureSize: {x: 32, y: 16}
