@@ -9,7 +9,6 @@ public class PlayerInput : MonoBehaviour
 
     public void OnMovement(InputValue value)
     {
-        Debug.Log("Working");
         moveVec = value.Get<Vector2>();
     }
     public void OnShoot(InputValue value)

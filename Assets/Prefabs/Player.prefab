@@ -226,8 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d35cbac43549d41a90cd0bbfd15de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalBullet: {fileID: 0}
-  firePoint: {fileID: 0}
+  normalBullet: {fileID: 1572751638761884194, guid: 713a6125eb94ef544bcfd7e213ff072a, type: 3}
+  firePoint: {fileID: 1684856551592167861}
+  bulletTimediff: 0.67
 --- !u!1 &3592732582674501281
 GameObject:
   m_ObjectHideFlags: 0

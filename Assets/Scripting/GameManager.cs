@@ -1,11 +1,12 @@
 using System;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    private static int currentLevel = 0;
+    public static int currentLevel = 0;
     public event Action<int> Trigger;
 
     public void Awake()

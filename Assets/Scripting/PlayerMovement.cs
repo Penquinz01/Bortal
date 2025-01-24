@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         rb.linearVelocity = new Vector2(direction.x * speed,rb.linearVelocityY);
     }
 
-    public void Teleport(Vector3 loc)
+    public void Teleport(Vector3 loc, bool right)
     {
         rb.position = loc;
     }
