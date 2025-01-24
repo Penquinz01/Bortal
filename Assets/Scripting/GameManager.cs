@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    private static int currentLevel = 0;
 
     public void Awake()
     {
@@ -11,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public void NextScene()
     {
-        Debug.Log("Ended the Game");
+        currentLevel++;
+        SceneManager.LoadScene(currentLevel);
     }
 }

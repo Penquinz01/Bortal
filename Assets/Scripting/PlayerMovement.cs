@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     Vector2 direction;
     public bool IsTeleported = true;
     private bool isRight = true;
+    float yValue;
     void Start()
     {
         input = GetComponent<PlayerInput>();
@@ -16,6 +17,8 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     private void Update()
     {
         direction = input.moveVec;
+        yValue = direction.y;
+        direction.y = 0;
         if((isRight &&direction.x<0)|| !isRight && direction.x > 0)
         {
             changeDirection();
