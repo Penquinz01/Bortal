@@ -200,6 +200,11 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.038740635, y: 0.019370079}
   m_Radius: 0.29661274
+--- !u!4 &1172559050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2356215414172720160, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+  m_PrefabInstance: {fileID: 1857727471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1181270088
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +452,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1251923340429415236, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251923340429415236, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251923340429415236, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -613984249
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580508539644745175, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580508539644745175, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580508539644745175, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -613984249
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714977962950563173, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: Gun
+      value: 
+      objectReference: {fileID: 1172559050}
+    - target: {fileID: 2356215414172720160, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356215414172720160, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356215414172720160, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5116654650517607003, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
       propertyPath: m_Name
       value: Player
@@ -457,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5399807999813646910, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.58
+      value: -2.436
       objectReference: {fileID: 0}
     - target: {fileID: 5399807999813646910, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
       propertyPath: m_LocalPosition.z
@@ -490,30 +535,6 @@ PrefabInstance:
     - target: {fileID: 5399807999813646910, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7156205097917626627, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.114
-      objectReference: {fileID: 0}
-    - target: {fileID: 7156205097917626627, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.303
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475693730830733769, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6055057
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475693730830733769, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0072205
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475693730830733769, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0075861216
-      objectReference: {fileID: 0}
-    - target: {fileID: 7475693730830733769, guid: d82be72df08bfa84ab4a6132fa35a887, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.0411855
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
