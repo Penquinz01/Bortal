@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     [SerializeField] private float speed = 5f;
     [SerializeField] Transform Gun;
     Rigidbody2D rb;
-    Vector2 direction;
+    Vector2 direction;  
+    Vector3 offset;
     public bool IsTeleported = true;
     private bool isRight = true;
     float yValue;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     {
         input = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
+        offset = Vector3.up * 0.5f;
     }
     private void Update()
     {
@@ -37,7 +39,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 
     public void Teleport(Vector3 loc, bool right)
     {
-        rb.position = loc;
+        rb.position = loc-offset;
     }
     public void setBool(bool value)
     {
