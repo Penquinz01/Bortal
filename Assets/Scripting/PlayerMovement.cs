@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.linearVelocity = direction * speed;
+        rb.linearVelocity = new Vector2(direction.x * speed,rb.linearVelocityY);
     }
 
     public void Teleport(Vector3 loc)
