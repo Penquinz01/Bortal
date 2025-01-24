@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 {
     PlayerInput input;
     [SerializeField] private float speed = 5f;
+    [SerializeField] Transform Gun;
     Rigidbody2D rb;
     Vector2 direction;
     public bool IsTeleported = true;
@@ -22,6 +23,10 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         if((isRight &&direction.x<0)|| !isRight && direction.x > 0)
         {
             changeDirection();
+        }
+        if(yValue != 0)
+        {
+            RotateGun(yValue);
         }
     }
     // Update is called once per frame
@@ -43,5 +48,10 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         isRight = !isRight;
 
         transform.Rotate(new Vector3(0,180,0));
+    }
+    private void RotateGun(float yValue)
+    {
+        int multi =yValue>0?1:-1 ;
+        //transform.rotation = new Vector3(0,0,90*multi);
     }
 }
