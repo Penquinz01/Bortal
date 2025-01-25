@@ -9,7 +9,7 @@ public class Bubble : MonoBehaviour
         ITeleportable por = collision.gameObject.GetComponent<ITeleportable>();
         if (por !=null)
         {
-            por.Teleport(bubblePair.position,right);
+            por.Teleport(bubblePair.position,bubblePair.right,right);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

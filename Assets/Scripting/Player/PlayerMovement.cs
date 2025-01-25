@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         rb.linearVelocity = new Vector2(direction.x * speed,rb.linearVelocityY);
     }
 
-    public void Teleport(Vector3 loc, bool right)
+    public void Teleport(Vector3 loc, Vector3 dir,bool right)
     {
         rb.position = loc;
     }

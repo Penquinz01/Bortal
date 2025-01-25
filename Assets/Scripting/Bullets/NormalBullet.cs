@@ -14,14 +14,17 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
     }
 
-    public void Teleport(Vector3 vec, bool right)
+    public void Teleport(Vector3 vec, Vector3 dir, bool right)
     {
+        float speed = rb.linearVelocity.magnitude;
+        int mult = 1;
         if (_right != right)
         {
-            
+            mult = -1;
             Flip();
         }
         rb.position = vec;
+        rb.linearVelocity = dir * speed*mult;
     }
     public void Awake()
     {

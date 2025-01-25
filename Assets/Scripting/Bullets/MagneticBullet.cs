@@ -10,14 +10,17 @@ public class MagneticBullet : MonoBehaviour,IBullet,ITeleportable
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
     }
 
-    public void Teleport(Vector3 vec, bool right)
+    public void Teleport(Vector3 vec, Vector3 dir, bool right)
     {
+        int mult = 1;
+        float speed = rb.linearVelocity.magnitude;
         if (_right != right)
         {
-
+            mult = -1;
             Flip();
         }
         rb.position = vec;
+        rb.linearVelocity = dir * speed * mult;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
