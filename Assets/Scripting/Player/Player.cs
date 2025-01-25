@@ -19,6 +19,12 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Traps"))
+        {
+            GameManager.instance.Die();
+        }
+    }
 
 }
