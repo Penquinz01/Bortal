@@ -3094,6 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &1027290563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3339,6 +3340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   gateBreak: {fileID: 1846725220140987190, guid: e208265ff357ff149891b25eddd7805f, type: 3}
+  clip: open
 --- !u!61 &1736522740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3529,6 +3531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &2015540660
 BoxCollider2D:
   m_ObjectHideFlags: 0

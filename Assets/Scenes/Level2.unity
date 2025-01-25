@@ -1466,6 +1466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &904411107
 BoxCollider2D:
   m_ObjectHideFlags: 0
