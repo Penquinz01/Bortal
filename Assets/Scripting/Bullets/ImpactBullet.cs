@@ -18,7 +18,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         float speed = rb.linearVelocity.magnitude;
         if (_right != right)
         {
-            mult = 1;
+            mult =   1;
             Flip();
         }
         rb.position = vec;
