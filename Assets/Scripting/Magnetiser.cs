@@ -30,7 +30,7 @@ public class Magnetiser : MonoBehaviour,IMettalic
     }
     IEnumerator waitFor()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         Ended();
     }
 
