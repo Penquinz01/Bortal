@@ -46,8 +46,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     {
         Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, impactRadius);
         foreach (Collider2D col in cols) { 
-            IImpactable imbacted = col.GetComponent<IImpactable>();
-            if (imbacted != null) {
+            if (col.TryGetComponent<IImpactable>(out var imbacted)) {
                 Vector2 dir = (col.transform.position - transform.position).normalized;
                 float distance = Vector2.Distance(col.transform.position, transform.position);
                 float force =Mathf.Max(impactForce * (1-(distance/impactRadius)* (distance / impactRadius)),0);
