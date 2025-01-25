@@ -8,7 +8,7 @@ TagManager:
   - Portal
   - MagPiece
   - MagBox
-  - GravityBox
+  - Traps
   layers:
   - Default
   - TransparentFX
