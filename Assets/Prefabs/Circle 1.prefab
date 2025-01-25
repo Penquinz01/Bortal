@@ -166,5 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletForce: 8
-  impactRadius: 2
-  impactForce: 5000
+  impactRadius: 4
+  impactForce: 2000

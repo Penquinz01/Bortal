@@ -51,7 +51,8 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             IImpactable imbacted = col.GetComponent<IImpactable>();
             if (imbacted != null) {
                 Vector2 dir = (col.transform.position - transform.position).normalized;
-                float force =(1/dir.magnitude)*impactForce;
+                float distance = Vector2.Distance(col.transform.position, transform.position);
+                float force =Mathf.Max(impactForce * (1-(distance/impactRadius)* (distance / impactRadius)),0);
                 imbacted.Imbact(dir, force);
             }
         }
