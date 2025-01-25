@@ -24,14 +24,16 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         {
             changeDirection();
         }
-        //if(yValue != 0)
-        //{
-        //    RotateGun(yValue);
-        //}
-        //else
-        //{
-        //    Gun.Rotate()
-        //}
+        if (yValue != 0)
+        {
+            RotateGun(yValue, 0);
+        }
+        if (Mathf.Abs(direction.x) > 0)
+        {
+            int multi = direction.x > 0 ?1:-1;
+            Gun.rotation = Quaternion.Euler(0, 0, 90 * multi - 90);
+            Gun.localScale = new Vector3(1, multi, 1);
+        }
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -53,9 +55,9 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 
         transform.Rotate(new Vector3(0,180,0));
     }
-    private void RotateGun(float yValue)
+    private void RotateGun(float yValue, float angle)
     {
         int multi =yValue>0?1:-1 ;
-        Gun.rotation = Quaternion.Euler(0,0,90*multi);
+        Gun.rotation = Quaternion.Euler(0,0,90 * multi - angle);
     }
 }
