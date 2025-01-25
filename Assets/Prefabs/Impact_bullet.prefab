@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 446894624428027806, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_Name
-      value: small_bubble Variant
+      value: Impact_bullet
       objectReference: {fileID: 0}
     - target: {fileID: 855203187527239675, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4153905899718111058, guid: e397a679a2179684a98817b3d4204eee, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6115512416594602002, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_Color.b
       value: 0.71383643
@@ -80,8 +84,32 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8064366512103278684, guid: e397a679a2179684a98817b3d4204eee, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 446894624428027806, guid: e397a679a2179684a98817b3d4204eee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6748068922860420079}
   m_SourcePrefab: {fileID: 100100000, guid: e397a679a2179684a98817b3d4204eee, type: 3}
+--- !u!1 &6715462477073215276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 446894624428027806, guid: e397a679a2179684a98817b3d4204eee, type: 3}
+  m_PrefabInstance: {fileID: 6557713580986826930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6748068922860420079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6715462477073215276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368ca5e1a779d3f40beee5f4a5c649ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletForce: 8
+  impactRadius: 4
+  impactForce: 2000
