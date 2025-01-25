@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Button
   - Portal
+  - MagPiece
+  - MagBox
+  - GravityBox
   layers:
   - Default
   - TransparentFX

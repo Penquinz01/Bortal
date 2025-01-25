@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     [SerializeField] Transform Gun;
     Rigidbody2D rb;
     Vector2 direction;  
-    Vector3 offset;
     public bool IsTeleported = true;
     private bool isRight = true;
     float yValue;
@@ -15,7 +14,6 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     {
         input = GetComponent<PlayerInput>();
         rb = GetComponent<Rigidbody2D>();
-        offset = Vector3.up * 0.5f;
     }
     private void Update()
     {
@@ -26,9 +24,15 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         {
             changeDirection();
         }
-        if(yValue != 0)
+        if (yValue != 0)
         {
-            RotateGun(yValue);
+            RotateGun(yValue, 0);
+        }
+        if (Mathf.Abs(direction.x) > 0)
+        {
+            int multi = direction.x > 0 ?1:-1;
+            Gun.rotation = Quaternion.Euler(0, 0, 90 * multi - 90);
+            Gun.localScale = new Vector3(1, multi, 1);
         }
     }
     // Update is called once per frame
@@ -39,7 +43,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 
     public void Teleport(Vector3 loc, bool right)
     {
-        rb.position = loc-offset;
+        rb.position = loc;
     }
     public void setBool(bool value)
     {
@@ -51,9 +55,9 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 
         transform.Rotate(new Vector3(0,180,0));
     }
-    private void RotateGun(float yValue)
+    private void RotateGun(float yValue, float angle)
     {
         int multi =yValue>0?1:-1 ;
-        //transform.rotation = new Vector3(0,0,90*multi);
+        Gun.rotation = Quaternion.Euler(0,0,90 * multi - angle);
     }
 }

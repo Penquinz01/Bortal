@@ -6,6 +6,12 @@ public class PlayerInput : MonoBehaviour
 {
     public Vector2 moveVec { get; private set; }
     public event Action Shoot;
+    PlayerShooting playerShooting;
+
+    public void Start()
+    {
+        playerShooting = GetComponent<PlayerShooting>();
+    }
 
     public void OnMovement(InputValue value)
     {
@@ -15,5 +21,12 @@ public class PlayerInput : MonoBehaviour
     {
         if (value.isPressed)
             Shoot?.Invoke();
+    }
+    public void OnSwitch(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            playerShooting.SwitchBullet();
+        }
     }
 }

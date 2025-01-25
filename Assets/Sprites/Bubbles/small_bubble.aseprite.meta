@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e304331eea1166b42aa6da22c45c5a04
+guid: 4616622e25496434abb905ff369169db
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638733693008559878
+  platformSettingsDirtyTick: 638733981344422943
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,7 +123,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: small_bubble
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 11
-      height: 15
-    spriteID: e8960598e48f6414bba7ac4a20699d34
+      width: 6
+      height: 6
+    spriteID: 0fd32e99820f9574fb890449f82ec7c4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,54 +144,24 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 27
-      width: 11
-      height: 14
-    spriteID: a671798f576ccd24e829bece76ef31a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 27}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1860788623
-    name: BortalSkullIdle
+    guid: 584696356
+    name: small_bubble
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: small_bubble
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 10
-        y: 9
-        width: 11
-        height: 15
-      spriteId: e8960598e48f6414bba7ac4a20699d34
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 9
-        width: 11
-        height: 14
-      spriteId: a671798f576ccd24e829bece76ef31a3
+        x: 1
+        y: 1
+        width: 6
+        height: 6
+      spriteId: 0fd32e99820f9574fb890449f82ec7c4
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -234,5 +204,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 32, y: 64}
+  canvasSize: {x: 8, y: 8}
+  previousTextureSize: {x: 16, y: 16}

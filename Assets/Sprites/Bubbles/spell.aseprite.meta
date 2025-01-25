@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e304331eea1166b42aa6da22c45c5a04
+guid: 4e0303a95d1d54d428a2df8b48e8acb5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638733693008559878
+  platformSettingsDirtyTick: 638733983675581872
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,11 +131,32 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
+      x: 24
+      y: 4
+      width: 2
+      height: 3
+    spriteID: cabf2ea28dbe1b543b49ee5d2e9c7809
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
       x: 4
       y: 4
-      width: 11
-      height: 15
-    spriteID: e8960598e48f6414bba7ac4a20699d34
+      width: 2
+      height: 4
+    spriteID: f5be364918b7b8143b7db897b21756d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,19 +165,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_1
+  - name: Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 27
-      width: 11
-      height: 14
-    spriteID: a671798f576ccd24e829bece76ef31a3
+      x: 14
+      y: 4
+      width: 2
+      height: 4
+    spriteID: f3c95fbb7760b26438c10450c86ee9e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,12 +185,33 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 27}
+    uvTransform: {x: 14, y: 4}
+  - name: Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 16
+      width: 2
+      height: 3
+    spriteID: f46c300bfe4ed244ebcb350e0760071a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 16}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1860788623
-    name: BortalSkullIdle
+    guid: 1548114972
+    name: spell
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -178,20 +220,38 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 10
-        y: 9
-        width: 11
-        height: 15
-      spriteId: e8960598e48f6414bba7ac4a20699d34
+        x: 1
+        y: 0
+        width: 2
+        height: 3
+      spriteId: cabf2ea28dbe1b543b49ee5d2e9c7809
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 10
-        y: 9
-        width: 11
-        height: 14
-      spriteId: a671798f576ccd24e829bece76ef31a3
+        x: 1
+        y: 0
+        width: 2
+        height: 4
+      spriteId: f5be364918b7b8143b7db897b21756d5
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 2
+        height: 4
+      spriteId: f3c95fbb7760b26438c10450c86ee9e3
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 2
+        height: 3
+      spriteId: f46c300bfe4ed244ebcb350e0760071a
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -234,5 +294,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 32, y: 64}
+  canvasSize: {x: 4, y: 4}
+  previousTextureSize: {x: 32, y: 32}
