@@ -273,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 5
   rb: {fileID: 0}
+  splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
 --- !u!4 &2180619646073367684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 4616622e25496434abb905ff369169db, type: 3}
