@@ -7,6 +7,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField][Range(0.1f,1f)] float bulletTimediff = 1f;
     [SerializeField] private GameObject impactBullet;
+    [SerializeField] private GameObject gravityBullet;
     private int currentBullet;
     GameObject currentBulletObject;
     //currentBullet Code
@@ -36,6 +37,8 @@ public class PlayerShooting : MonoBehaviour
                 case 0 :currentBulletObject = normalBullet;
                     break;
                 case 1:currentBulletObject = impactBullet;
+                    break;
+                case 2:currentBulletObject = gravityBullet;
                     break;
                 default:return;
             }

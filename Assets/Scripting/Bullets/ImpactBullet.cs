@@ -4,13 +4,11 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
 {
     [SerializeField] float bulletForce = 100f;
     Rigidbody2D rb;
-    Vector2 direction;
     bool _right;
     [SerializeField] float impactRadius = 2f;
     [SerializeField] float impactForce = 200f;
     public void Fire(Vector2 direction)
     {
-        this.direction = direction;
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
     }
 
