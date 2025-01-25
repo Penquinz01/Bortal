@@ -20,6 +20,7 @@ public class Bubble : MonoBehaviour
             por.Teleport(bubblePair.position,bubblePair.right,right);
             anim.SetTrigger("Boom");
             pairAnim.animateBurst();
+            FindFirstObjectByType<AudioManager>().Play("teleport");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

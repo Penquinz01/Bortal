@@ -6,6 +6,7 @@ public class AntiGravityBullet : MonoBehaviour,IBullet,ITeleportable
     Rigidbody2D rb;
     bool _right;
     [SerializeField] float affectRadius = 2f;
+    [SerializeField] GameObject splash;
     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -47,6 +48,7 @@ public class AntiGravityBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
+        Instantiate(splash, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
