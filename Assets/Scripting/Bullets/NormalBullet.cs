@@ -16,7 +16,6 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
 
     public void Teleport(Vector3 vec, bool right)
     {
-        Debug.Log(_right + "," + right);
         if (_right != right)
         {
             

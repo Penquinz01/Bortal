@@ -6,11 +6,19 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private GameObject normalBullet;
     [SerializeField] private Transform firePoint;
     [SerializeField][Range(0.1f,1f)] float bulletTimediff = 1f;
+    [SerializeField] private GameObject impactBullet;
+    private int currentBullet;
+    GameObject currentBulletObject;
+    //currentBullet Code
+    // 0 -> normal
+    //1 ->impact
+    [SerializeField] private int totaltypeofBullet = 2;
     private float bulletTime = 0;
     private void Start()
     {
         input = GetComponent<PlayerInput>();
         input.Shoot += Fire;
+        currentBullet = 0;
     }
 
     private void OnDisable()
@@ -22,11 +30,28 @@ public class PlayerShooting : MonoBehaviour
     {
         if (bulletTime <= Time.time)
         {
+            
+            switch (currentBullet)
+            {
+                case 0 :currentBulletObject = normalBullet;
+                    break;
+                case 1:currentBulletObject = impactBullet;
+                    break;
+                default:return;
+            }
             bulletTime = Time.time + bulletTimediff;
-            GameObject bullet = Instantiate(normalBullet, firePoint.position, Quaternion.identity);
+            GameObject bullet = Instantiate(currentBulletObject, firePoint.position, Quaternion.identity);
             IBullet bull = bullet.GetComponent<IBullet>();
             bull.Fire(transform.right);
         }
         
+    }
+    public void SwitchBullet()
+    {
+        currentBullet++;
+        if(currentBullet >= totaltypeofBullet)
+        {
+            currentBullet = 0;
+        }
     }
 }
