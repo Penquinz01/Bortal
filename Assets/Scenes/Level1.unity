@@ -1857,6 +1857,22 @@ PrefabInstance:
       propertyPath: pairAnim
       value: 
       objectReference: {fileID: 1443963193}
+    - target: {fileID: 2286248180599939635, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286248180599939635, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452203705163663535, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.84375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452203705163663535, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2477403307357253747, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
       propertyPath: m_TagString
       value: Portal
