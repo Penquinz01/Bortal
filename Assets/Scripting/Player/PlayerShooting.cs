@@ -14,8 +14,8 @@ public class PlayerShooting : MonoBehaviour
     //currentBullet Code
     // 0 -> normal
     //1 ->impact
-    //2 -? grivity
-    // 3->magnetic
+    //2 -> grivity
+    //3->magnetic
     [SerializeField] private int totaltypeofBullet = 2;
     private float bulletTime = 0;
     private void Start()
