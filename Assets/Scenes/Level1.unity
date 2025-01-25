@@ -1789,6 +1789,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2735419395558604019, guid: d1c76f9e3d86ed047a02838661df35d1, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270536096634243699, guid: d1c76f9e3d86ed047a02838661df35d1, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566717782624514283, guid: d1c76f9e3d86ed047a02838661df35d1, type: 3}
+      propertyPath: waitSec
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8080763756721316128, guid: d1c76f9e3d86ed047a02838661df35d1, type: 3}
       propertyPath: m_RenderingLayerMask
       value: 4294967295

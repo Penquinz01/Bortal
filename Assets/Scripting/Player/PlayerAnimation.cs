@@ -20,9 +20,9 @@ public class PlayerAnimation : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.CompareTag("Portal"))
-       {
+        if (collision.CompareTag("Portal"))
+        {
             _anim.SetTrigger("Teleport");
-       }
+        }
     }
 }
