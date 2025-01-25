@@ -3202,6 +3202,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1952522052502131223, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2096712854200941891, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
       propertyPath: m_Name
       value: Bubbles
@@ -3213,6 +3217,10 @@ PrefabInstance:
     - target: {fileID: 2895219800077980918, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568391291511561841, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: right
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3698081360824367153, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
       propertyPath: m_LocalPosition.x

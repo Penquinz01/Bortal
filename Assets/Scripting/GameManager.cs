@@ -23,4 +23,8 @@ public class GameManager : MonoBehaviour
     {
         Trigger.Invoke(id);
     }
+    public void Die()
+    {
+        SceneManager.LoadScene(currentLevel);
+    }
 }
