@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: AntiGravity_bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 1726350417400062913, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8930817
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726350417400062913, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.21063234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726350417400062913, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6481705
+      objectReference: {fileID: 0}
     - target: {fileID: 2180619646073367684, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3207302
@@ -51,6 +63,18 @@ PrefabInstance:
     - target: {fileID: 2180619646073367684, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702882688489194349, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702882688489194349, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.75157225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702882688489194349, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8996678
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
