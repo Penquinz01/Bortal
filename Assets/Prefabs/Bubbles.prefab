@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2162625189390536077}
   m_Layer: 0
   m_Name: bubble1
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePair: {fileID: 2452203705163663535}
   right: 0
+  pairAnim: {fileID: 3936436072677048609}
 --- !u!1 &2477403307357253747
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +179,7 @@ GameObject:
   - component: {fileID: 2142313445770550674}
   m_Layer: 0
   m_Name: bubble2
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblePair: {fileID: 2286248180599939635}
   right: 0
+  pairAnim: {fileID: 2162625189390536077}
 --- !u!58 &2142313445770550674
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -399,7 +401,7 @@ GameObject:
   - component: {fileID: 7619377712280913224}
   m_Layer: 0
   m_Name: Bubbles
-  m_TagString: Portal
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

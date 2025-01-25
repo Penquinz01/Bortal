@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     public bool IsTeleported = false;
     private bool isRight = true;
     float yValue;
-    private float teleportTime = 0f;
     [SerializeField] float waitSec = 0.5f;
     void Start()
     {

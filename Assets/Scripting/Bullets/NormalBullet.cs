@@ -7,6 +7,7 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
     public Rigidbody2D rb;
     Vector2 direction;
     bool _right;
+    [SerializeField] GameObject splash;
     public void Fire(Vector2 direction)
     {
         
@@ -42,6 +43,7 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
             Button button = collision.gameObject.GetComponent<Button>();
             button.Open();
         }
+        Instantiate(splash, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     private void Update()

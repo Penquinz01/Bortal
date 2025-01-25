@@ -9,6 +9,7 @@ TagManager:
   - MagPiece
   - MagBox
   - Traps
+  - Gun
   layers:
   - Default
   - TransparentFX
