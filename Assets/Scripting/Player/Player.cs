@@ -3,6 +3,8 @@ using UnityEngine;
 public class Player : MonoBehaviour,IImpactable,IGravityAffector
 {
     Rigidbody2D rb;
+    bool Grounded = false;
+    [SerializeField] float rayLength;
 
     public void AntiGravity()
     {
@@ -26,5 +28,14 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
             GameManager.instance.Die();
         }
     }
+    private void Update()
+    {
+        
+    }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.position - Vector3.up * rayLength);
+    }
 }
