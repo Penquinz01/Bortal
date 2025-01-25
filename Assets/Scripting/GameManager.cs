@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public static int currentLevel = 0;
+    public static int currentLevel = 1;
     public event Action<int> Trigger;
 
     public void Awake()

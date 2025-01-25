@@ -9,6 +9,8 @@ TagManager:
   - MagPiece
   - MagBox
   - GravityBox
+  - Traps
+  - KeyBox
   layers:
   - Default
   - TransparentFX
