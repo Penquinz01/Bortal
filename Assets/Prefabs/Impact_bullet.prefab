@@ -86,6 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8064366512103278684, guid: e397a679a2179684a98817b3d4204eee, type: 3}
+    - {fileID: 7918848464855615491, guid: e397a679a2179684a98817b3d4204eee, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -111,5 +112,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletForce: 8
-  impactRadius: 4
+  impactRadius: 1.5
   impactForce: 2000

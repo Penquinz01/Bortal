@@ -14,11 +14,11 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
 
     public void Teleport(Vector3 vec, Vector3 dir, bool right)
     {
-        int mult = 1;
+        int mult = -1;
         float speed = rb.linearVelocity.magnitude;
         if (_right != right)
         {
-            mult = -1;
+            mult = 1;
             Flip();
         }
         rb.position = vec;
