@@ -21,9 +21,4 @@ public class GateSpawn : MonoBehaviour
             Instantiate(prefab,target);
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
