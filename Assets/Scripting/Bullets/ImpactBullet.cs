@@ -7,6 +7,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     bool _right;
     [SerializeField] float impactRadius = 2f;
     [SerializeField] float impactForce = 200f;
+    [SerializeField] GameObject splash;
     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -18,7 +19,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         float speed = rb.linearVelocity.magnitude;
         if (_right != right)
         {
-            mult = 1;
+            mult =   1;
             Flip();
         }
         rb.position = vec;
@@ -37,6 +38,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
+        Instantiate(splash, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

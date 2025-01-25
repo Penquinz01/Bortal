@@ -114,3 +114,4 @@ MonoBehaviour:
   bulletForce: 8
   impactRadius: 1.5
   impactForce: 2000
+  splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}

@@ -5,6 +5,7 @@ public class MagneticBullet : MonoBehaviour,IBullet,ITeleportable
     [SerializeField] float bulletForce = 100f;
     Rigidbody2D rb;
     bool _right;
+    [SerializeField] GameObject splash;
     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -45,6 +46,7 @@ public class MagneticBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact(collision);
+        Instantiate(splash, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     void Impact(Collider2D collider)

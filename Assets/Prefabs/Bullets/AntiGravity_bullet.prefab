@@ -76,7 +76,8 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8996678
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8680743799728300924, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -103,3 +104,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 18
   affectRadius: 2
+  splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
