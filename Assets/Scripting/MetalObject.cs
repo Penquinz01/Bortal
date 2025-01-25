@@ -5,9 +5,13 @@ public class MetalObject : MonoBehaviour
     [SerializeField] float force= 30f;
     Rigidbody2D rb;
     bool isAttracting = false;
-    private Vector2 target;
+    private Vector3 target;
     public bool isDone = false;
-    [SerializeField] Magnetise attAobject;
+    [SerializeField] Magnetiser attAobject;
+    public void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     public void Attract(Vector2 target)
     {
         isAttracting=true;
@@ -17,9 +21,9 @@ public class MetalObject : MonoBehaviour
     {
         if (isAttracting)
         {
-            transform.Translate(target.normalized * force * Time.deltaTime);
+            rb.linearVelocity = target *force *Time.deltaTime;
         }
-        if (Vector2.Distance(target, transform.position) < 0.2f)
+        if (Vector2.Distance(target, transform.position) < 2f)
         {
             isAttracting=false;
             isDone = true;
