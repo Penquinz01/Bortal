@@ -50,7 +50,7 @@ public class PlayerShooting : MonoBehaviour
             bulletTime = Time.time + bulletTimediff;
             GameObject bullet = Instantiate(currentBulletObject, firePoint.position, Quaternion.identity);
             IBullet bull = bullet.GetComponent<IBullet>();
-            bull.Fire(transform.right);
+            bull.Fire(firePoint.right);
         }
         
     }
