@@ -8,7 +8,6 @@ public class Magnetiser : MonoBehaviour,IMettalic
     [SerializeField] List<GameObject> MetalPieces;
     [SerializeField] List<Transform> Target;
     [SerializeField] GameObject Gate;
-    private int done = 0;
 
     public void Ended()
     {
