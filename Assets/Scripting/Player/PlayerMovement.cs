@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour,ITeleportable
@@ -7,9 +8,11 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     [SerializeField] Transform Gun;
     Rigidbody2D rb;
     Vector2 direction;  
-    public bool IsTeleported = true;
+    public bool IsTeleported = false;
     private bool isRight = true;
     float yValue;
+    private float teleportTime = 0f;
+    [SerializeField] float waitSec = 0.5f;
     void Start()
     {
         input = GetComponent<PlayerInput>();
@@ -43,7 +46,8 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
 
     public void Teleport(Vector3 loc, Vector3 dir,bool right)
     {
-        rb.position = loc;
+        StartCoroutine(WaitFor(waitSec,loc));
+        
     }
     public void setBool(bool value)
     {
@@ -59,5 +63,10 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     {
         int multi =yValue>0?1:-1 ;
         Gun.rotation = Quaternion.Euler(0,0,90 * multi - angle);
+    }
+    IEnumerator WaitFor(float sec,Vector2 loc)
+    {
+        yield return new WaitForSeconds(sec);
+        rb.position = loc;
     }
 }
