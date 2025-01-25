@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: e6da4a070f0423546b282af8a4c9bf26
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: BortalSkullWalking_Clip
+    second: {fileID: 7400000, guid: 2a1f7f5af8f39b842915c9164f6fcb71, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -98,7 +103,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638733960353228947
+  platformSettingsDirtyTick: 638733965921182184
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -125,8 +130,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.6}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -146,8 +151,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.6428572}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -167,8 +172,8 @@ ScriptedImporter:
     uvTransform: {x: 22, y: 4}
   - name: Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -0.6}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -188,8 +193,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 27}
   - name: Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.6428572}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
