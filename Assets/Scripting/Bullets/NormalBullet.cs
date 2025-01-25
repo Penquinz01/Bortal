@@ -17,10 +17,10 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
     public void Teleport(Vector3 vec, Vector3 dir, bool right)
     {
         float speed = rb.linearVelocity.magnitude;
-        int mult = 1;
+        int mult = -1;
         if (_right != right)
         {
-            mult = -1;
+            mult = 1;
             Flip();
         }
         rb.position = vec;
