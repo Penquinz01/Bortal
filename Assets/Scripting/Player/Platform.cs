@@ -3,7 +3,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float speed = 5f;
     [SerializeField] private float point1=1;
     [SerializeField] private float point2=10;
 
@@ -17,10 +17,10 @@ public class Platform : MonoBehaviour
     {
         if (transform.position.x >= point2)
         {
-            rb.linearVelocityX = 0;
+            rb.linearVelocityX = 0f;
             rb.linearVelocityX = -speed;
         }
-        if (transform.position.y <= point1)
+        if (transform.position.x <= point1)
         {
             rb.linearVelocityX = 0;
             rb.linearVelocityX = speed;
