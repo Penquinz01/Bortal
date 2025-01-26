@@ -3,21 +3,21 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    public IEnumerator Shake(float duration, float magnitude)
+    [SerializeField] float shakeAmt = 0.2f;
+    private Vector3 intialPos;
+    private void Awake()
     {
-        Vector3 OriginalPos = transform.localPosition;
-        float elapsed = 0;
-        while (elapsed < duration)
+        intialPos = transform.position;
+    }
+    public IEnumerator Shake(float time)
+    {
+        float elasped = 0f;
+        while (elasped < time)
         {
-            float x = Random.Range(-1, 1) * magnitude;
-            float y = Random.Range(-1, 1) * magnitude;
-
-            transform.localPosition = new Vector3(x, y, OriginalPos.z);
-
-            elapsed += Time.deltaTime;
+            transform.position = intialPos + (Vector3)Random.insideUnitCircle * shakeAmt;
+            elasped += Time.deltaTime;
 
             yield return null;
         }
-        transform.localPosition = OriginalPos;
     }
 }

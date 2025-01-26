@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c0130116af09344a4bc6b5446d5f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeAmt: 0.2
 --- !u!114 &1280670204 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2162625189390536077, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
@@ -1946,6 +1947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 1181270093}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
