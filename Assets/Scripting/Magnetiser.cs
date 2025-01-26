@@ -8,10 +8,11 @@ public class Magnetiser : MonoBehaviour,IMettalic
     [SerializeField] List<GameObject> MetalPieces;
     [SerializeField] List<Transform> Target;
     [SerializeField] GameObject Gate;
+    [SerializeField] int id;
 
     public void Ended()
     {
-        Destroy(Gate);
+        GameManager.instance.ButtonTrigger(id);
     }
     public void Magnetise()
     {

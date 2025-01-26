@@ -24,7 +24,11 @@ public class EndPoint : MonoBehaviour
     IEnumerator LoadLevel()
     {
         transition.SetTrigger("Start");
-        FindFirstObjectByType<AudioManager>().Play("next");
+        AudioManager audio = GetComponent<AudioManager>();
+        if (audio != null)
+        {
+            audio.Play("next");
+        }
         yield return new WaitForSeconds(1);
         //FindFirstObjectByType<AudioManager>().Stop("walk");
         GameManager.instance.NextScene();

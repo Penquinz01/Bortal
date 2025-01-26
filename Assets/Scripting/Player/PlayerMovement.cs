@@ -40,23 +40,18 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
             Gun.rotation = Quaternion.Euler(0, 0, 90 * multi - 90);
             Gun.localScale = new Vector3(1, multi, 1);
         }
-        if (Grounded() && Mathf.Abs(direction.x) > 0.01f && !AudioManager.instance.IsPlaying("walk"))
+        if (AudioManager.instance != null)
         {
-            Debug.Log("walking noise");
-            if(AudioManager.instance != null)
+            if (Grounded() && Mathf.Abs(direction.x) > 0.01f && !AudioManager.instance.IsPlaying("walk"))
             {
+                Debug.Log("walking noise");
                 AudioManager.instance.Play("walk");
             }
-            
-        }
-        else if (!Grounded() || Mathf.Abs(direction.x) <= 0.01f)
-        {
-            Debug.Log("no walk");
-            if(AudioManager.instance != null)
+            else if (!Grounded() || Mathf.Abs(direction.x) <= 0.01f)
             {
+                Debug.Log("no walk");
                 AudioManager.instance.Stop("walk");
             }
-            
         }
     }
     void FixedUpdate()

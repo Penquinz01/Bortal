@@ -19,7 +19,11 @@ public class Gate : MonoBehaviour
         if(this.id == id && gameObject != null)
         {
             Instantiate(gateBreak, gameObject.transform.position, Quaternion.identity);
-            FindFirstObjectByType<AudioManager>().Play(clip);
+            AudioManager audio = FindFirstObjectByType<AudioManager>();
+            if (audio != null)
+            {
+                audio.Play(clip);
+            }
             Destroy(gameObject);
         }
     }
