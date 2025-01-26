@@ -8,8 +8,6 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     [SerializeField] float impactRadius = 2f;
     [SerializeField] float impactForce = 200f;
     [SerializeField] GameObject splash;
-    [SerializeField] GameObject explosion;
-
     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -31,12 +29,16 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+<<<<<<< HEAD
 
         rb = GetComponent<Rigidbody2D>();
 
         
         rb = GetComponent<Rigidbody2D>();
 
+=======
+        rb= GetComponent<Rigidbody2D>();
+>>>>>>> parent of 82b1cf3 (explosion)
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,9 +51,12 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         GameManager.instance.Shake();
 
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+<<<<<<< HEAD
 
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
+=======
+>>>>>>> parent of 82b1cf3 (explosion)
         AudioManager audio = FindFirstObjectByType<AudioManager>();
         if (audio != null)
         {

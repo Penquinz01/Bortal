@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
     private CinemachineImpulseSource source;
     public void Awake()
     {
-        instance = this;
+        if (instance == null)
+            instance = this;
+        else Destroy(this.gameObject);
     }
 
     public void Start()
