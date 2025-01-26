@@ -2235,6 +2235,7 @@ GameObject:
   - component: {fileID: 798447206}
   - component: {fileID: 798447209}
   - component: {fileID: 798447210}
+  - component: {fileID: 798447211}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2392,6 +2393,19 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &798447211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798447205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c0130116af09344a4bc6b5446d5f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeAmt: 0.2
 --- !u!1 &875173950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 6fe582fb31bb67540a4395ecb7f52ca6, type: 3}
@@ -2470,6 +2484,7 @@ GameObject:
   - component: {fileID: 917575896}
   - component: {fileID: 917575895}
   - component: {fileID: 917575898}
+  - component: {fileID: 917575899}
   m_Layer: 0
   m_Name: FollowCam
   m_TagString: Untagged
@@ -2583,6 +2598,29 @@ MonoBehaviour:
   FocusTarget: {fileID: 0}
   FocusOffset: 0
   Profile: {fileID: 11400000, guid: fe53dcaa6bcb5d64b8913a5b830c5bae, type: 2}
+--- !u!114 &917575899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917575894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 2
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 0.2
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1084495625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,6 +4543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 798447211}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

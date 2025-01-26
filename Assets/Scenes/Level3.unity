@@ -199,8 +199,16 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 2033853932}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: currentlevel
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: isCinemachine
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x

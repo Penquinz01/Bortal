@@ -1816,6 +1816,14 @@ PrefabInstance:
       propertyPath: bubble
       value: 
       objectReference: {fileID: 387917193}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 1828561263}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: isCinemachine
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
