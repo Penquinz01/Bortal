@@ -4739,6 +4739,14 @@ PrefabInstance:
       propertyPath: point2
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4304846671096935762, guid: 40c93ce6e366d6a44ae50f863b76c642, type: 3}
+      propertyPath: spikebox1
+      value: 
+      objectReference: {fileID: 25133875}
+    - target: {fileID: 4304846671096935762, guid: 40c93ce6e366d6a44ae50f863b76c642, type: 3}
+      propertyPath: spikebox2
+      value: 
+      objectReference: {fileID: 1457666701}
     - target: {fileID: 6357226027813895764, guid: 40c93ce6e366d6a44ae50f863b76c642, type: 3}
       propertyPath: m_Name
       value: Platform2
