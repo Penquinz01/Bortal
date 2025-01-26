@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96d3446fa3e0d24ebe965456ec1af70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubble: {fileID: 6488771809918856812, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}

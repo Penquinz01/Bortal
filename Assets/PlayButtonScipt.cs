@@ -11,6 +11,7 @@ public class PlayButtonScipt : MonoBehaviour
     private void Start()
     {
         transition = transitionObject.GetComponentInChildren<Animator>();
+        FindFirstObjectByType<AudioManager>().Play("theme");
     }
     public void OnJump()
     {

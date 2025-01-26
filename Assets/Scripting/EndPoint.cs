@@ -21,10 +21,10 @@ public class EndPoint : MonoBehaviour
 
 
 
-    public IEnumerator LoadLevel()
+    IEnumerator LoadLevel()
     {
         transition.SetTrigger("Start");
-        AudioManager audio = GetComponent<AudioManager>();
+        AudioManager audio = FindFirstObjectByType<AudioManager>();
         if (audio != null)
         {
             audio.Play("next");
