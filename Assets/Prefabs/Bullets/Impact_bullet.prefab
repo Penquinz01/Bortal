@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368ca5e1a779d3f40beee5f4a5c649ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletForce: 8
-  impactRadius: 1.5
+  bulletForce: 7.5
+  impactRadius: 1.75
   impactForce: 2000
   splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
