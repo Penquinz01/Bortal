@@ -22,8 +22,8 @@ public class Platform : MonoBehaviour
 
     private void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("SpikeBox");
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        GameObject spikebox = GameObject.FindGameObjectWithTag("SpikeBox");
+        Physics2D.IgnoreCollision(spikebox.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         rb.linearVelocityX = speed;
         //target = null;
     }
