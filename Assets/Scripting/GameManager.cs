@@ -1,4 +1,5 @@
 using System;
+using Unity.Cinemachine;
 using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public event Action<int> Trigger;
     [SerializeField]private CameraShake cameraShake;
     float time = 0.25f;
+    [SerializeField] bool isCinemachine = false;
+    private CinemachineImpulseSource source;
     public void Awake()
     {
         instance = this;
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
+        source = GetComponent<CinemachineImpulseSource>();
     }
     public void NextScene()
     {
@@ -34,6 +38,14 @@ public class GameManager : MonoBehaviour
     }
     public void Shake()
     {
-        StartCoroutine(cameraShake.Shake(time));
+        if (!isCinemachine)
+        {
+            StartCoroutine(cameraShake.Shake(time));
+        }
+        else
+        {
+            source.GenerateImpulse(time);
+        }
+        
     }
 }

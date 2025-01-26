@@ -199,8 +199,16 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 2033853932}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: currentlevel
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: isCinemachine
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4110,6 +4118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c0130116af09344a4bc6b5446d5f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeAmt: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

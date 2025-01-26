@@ -11,6 +11,7 @@ public class CameraShake : MonoBehaviour
     }
     public IEnumerator Shake(float time)
     {
+        Debug.Log("Working shake");
         float elasped = 0f;
         while (elasped < time)
         {
