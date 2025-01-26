@@ -8,9 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static int currentLevel;
     public event Action<int> Trigger;
-    private CameraShake cameraShake;
-    [SerializeField] float time = 0.5f;
-    [SerializeField] float magnitude = 2f;
+    [SerializeField]private CameraShake cameraShake;
+    float time = 0.25f;
     public void Awake()
     {
         instance = this;
@@ -19,7 +18,6 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
-        cameraShake = Camera.main.GetComponent<CameraShake>();
     }
     public void NextScene()
     {
@@ -36,6 +34,6 @@ public class GameManager : MonoBehaviour
     }
     public void Shake()
     {
-        StartCoroutine(cameraShake.Shake(time,magnitude));
+        StartCoroutine(cameraShake.Shake(time));
     }
 }
