@@ -115,4 +115,9 @@ MonoBehaviour:
   impactRadius: 1.75
   impactForce: 2000
   splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
+<<<<<<< HEAD
   explosion: {fileID: 5597839664975442648, guid: 6677fe7eed24658419d787c6b89435e9, type: 3}
+=======
+  time: 0.5
+  magnitude: 5
+>>>>>>> 779e53b36f3df74ef0dc09f6a277657b10d780b0

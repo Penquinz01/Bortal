@@ -31,8 +31,14 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+<<<<<<< HEAD
         rb = GetComponent<Rigidbody2D>();
+=======
+        
+        rb= GetComponent<Rigidbody2D>();
+>>>>>>> 779e53b36f3df74ef0dc09f6a277657b10d780b0
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Portal") || collision.gameObject.CompareTag("Player"))
@@ -40,6 +46,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
+        GameManager.instance.Shake();
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
@@ -58,6 +65,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     }
     void Impact()
     {
+        
         Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, impactRadius);
         foreach (Collider2D col in cols) { 
             if (col.TryGetComponent<IImpactable>(out var imbacted)) {
@@ -67,6 +75,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
                 imbacted.Imbact(dir, force);
             }
         }
+        
     }
     void Flip()
     {
