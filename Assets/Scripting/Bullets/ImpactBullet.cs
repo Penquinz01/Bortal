@@ -8,6 +8,8 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     [SerializeField] float impactRadius = 2f;
     [SerializeField] float impactForce = 200f;
     [SerializeField] GameObject splash;
+    [SerializeField] GameObject explosion;
+
     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
@@ -29,10 +31,8 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        
-        rb= GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Portal") || collision.gameObject.CompareTag("Player"))
@@ -40,8 +40,9 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
-        GameManager.instance.Shake();
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+        Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+
         AudioManager audio = FindFirstObjectByType<AudioManager>();
         if (audio != null)
         {
@@ -57,7 +58,6 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     }
     void Impact()
     {
-        
         Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, impactRadius);
         foreach (Collider2D col in cols) { 
             if (col.TryGetComponent<IImpactable>(out var imbacted)) {
@@ -67,7 +67,6 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
                 imbacted.Imbact(dir, force);
             }
         }
-        
     }
     void Flip()
     {
