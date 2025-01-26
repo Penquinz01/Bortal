@@ -290,7 +290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 61715125}
   - component: {fileID: 61715124}
-  - component: {fileID: 61715126}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -368,28 +367,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &61715126
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61715123}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b5e8e53fe8dd6dd4b96fc47740133f4d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &155030378
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BortalSkullWalking
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: e6da4a070f0423546b282af8a4c9bf26, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: e6da4a070f0423546b282af8a4c9bf26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.920021
@@ -624,8 +605,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: e6da4a070f0423546b282af8a4c9bf26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1628966035}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: e6da4a070f0423546b282af8a4c9bf26, type: 3}
+--- !u!1 &387917193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6488771809918856812, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+  m_PrefabInstance: {fileID: 214889207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &409972317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,6 +1812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2789172605895937382, guid: 7c4b878e727971842ae6243511427536, type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 387917193}
     - target: {fileID: 8321678644569265615, guid: 7c4b878e727971842ae6243511427536, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2021,6 +2014,57 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 911213013}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 52791234560f11a4a8cf1e38d81854a8, type: 3}
+--- !u!1 &1628966032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: e6da4a070f0423546b282af8a4c9bf26, type: 3}
+  m_PrefabInstance: {fileID: 324027126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1628966035
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628966032}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 0.9375}
+    newSize: {x: 0.625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.625, y: 0.9375}
+  m_EdgeRadius: 0
 --- !u!1 &1655522607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1617001549193795178, guid: 5e9b6306d099eb848941e60e4ca30d01, type: 3}
@@ -2331,6 +2375,38 @@ PrefabInstance:
     - target: {fileID: 488498691983066249, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f8f8e9488fb8bc24d8a23fd354d38d79, type: 3}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074328871368948865, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
+      propertyPath: sounds.Array.data[7].pitchVariance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8947040887312460147, guid: 960678f4b7f325643a7379212e7dec8e, type: 3}
       propertyPath: m_LocalPosition.x

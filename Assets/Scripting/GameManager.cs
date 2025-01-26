@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static int currentLevel;
     public event Action<int> Trigger;
-
     public void Awake()
     {
         instance = this;
