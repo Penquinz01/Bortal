@@ -26,6 +26,7 @@ public class EndPoint : MonoBehaviour
         transition.SetTrigger("Start");
         FindFirstObjectByType<AudioManager>().Play("next");
         yield return new WaitForSeconds(1);
+        //FindFirstObjectByType<AudioManager>().Stop("walk");
         GameManager.instance.NextScene();
     }
 

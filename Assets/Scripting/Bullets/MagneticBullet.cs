@@ -47,6 +47,7 @@ public class MagneticBullet : MonoBehaviour,IBullet,ITeleportable
         }
         Impact(collision);
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+        FindFirstObjectByType<AudioManager>().Play("splash");
         Destroy(gameObject);
     }
     void Impact(Collider2D collider)

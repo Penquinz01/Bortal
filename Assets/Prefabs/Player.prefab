@@ -84,7 +84,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -135,6 +135,10 @@ MonoBehaviour:
   Gun: {fileID: 465383448870711799}
   IsTeleported: 1
   waitSec: 0.25
+  rayLength: 0.51
+  layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &8725773292286554678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: ce0a59f6e4b026745a43017cc04ce420, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ce0a59f6e4b026745a43017cc04ce420, type: 3}
       propertyPath: m_LocalPosition.x

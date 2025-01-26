@@ -44,6 +44,7 @@ public class NormalBullet : MonoBehaviour,IBullet,ITeleportable
             button.Open();
         }
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+        FindFirstObjectByType<AudioManager>().Play("splash");
         Destroy(gameObject);
     }
     private void Update()
