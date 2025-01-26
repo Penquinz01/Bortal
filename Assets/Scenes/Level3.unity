@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trapdoor
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -274,7 +278,7 @@ GameObject:
   - component: {fileID: 242638234}
   - component: {fileID: 242638233}
   - component: {fileID: 242638232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2836,6 +2840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trapdoor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
@@ -2902,7 +2910,7 @@ GameObject:
   - component: {fileID: 457701039}
   - component: {fileID: 457701041}
   - component: {fileID: 457701040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Button2
   m_TagString: Button
   m_Icon: {fileID: 0}
@@ -3098,6 +3106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &1027290563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3216,7 +3225,7 @@ GameObject:
   - component: {fileID: 1438542425}
   - component: {fileID: 1438542427}
   - component: {fileID: 1438542426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Button1
   m_TagString: Button
   m_Icon: {fileID: 0}
@@ -3307,6 +3316,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.875
       objectReference: {fileID: 0}
+    - target: {fileID: 2286248180599939635, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452203705163663535, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.86
+      objectReference: {fileID: 0}
     - target: {fileID: 3936436072677048609, guid: fd8eb463b32155347a4eeb8c6ff518b7, type: 3}
       propertyPath: right
       value: 1
@@ -3343,6 +3360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   gateBreak: {fileID: 1846725220140987190, guid: e208265ff357ff149891b25eddd7805f, type: 3}
+  clip: open
 --- !u!61 &1736522740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3533,6 +3551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &2015540660
 BoxCollider2D:
   m_ObjectHideFlags: 0

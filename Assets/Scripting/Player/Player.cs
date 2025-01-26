@@ -3,9 +3,6 @@ using UnityEngine;
 public class Player : MonoBehaviour,IImpactable,IGravityAffector
 {
     Rigidbody2D rb;
-    [SerializeField]bool isGrounded = false;
-    [SerializeField] float rayLength;
-    [SerializeField] LayerMask layer;
 
     public void AntiGravity()
     {
@@ -31,16 +28,9 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
     }
     private void Update()
     {
-        isGrounded = Grounded();
+        
     }
-    private bool Grounded()
-    {
-        return Physics2D.Raycast(transform.position,Vector2.down,rayLength,layer);
-    }
+    
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, transform.position - Vector3.up * rayLength);
-    }
+    
 }

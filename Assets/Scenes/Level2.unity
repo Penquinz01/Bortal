@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 466215892}
   - component: {fileID: 466215891}
   - component: {fileID: 466215890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1396,6 +1396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trapdoor
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 66d72ce59453b1b4b863c87fe02f4b41, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
@@ -1466,6 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   gateBreak: {fileID: 4948183367766195474, guid: 8605a2918e3f35e4895ae08fe74d2bad, type: 3}
+  clip: break
 --- !u!61 &904411107
 BoxCollider2D:
   m_ObjectHideFlags: 0

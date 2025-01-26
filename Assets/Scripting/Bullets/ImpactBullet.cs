@@ -39,6 +39,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         }
         Impact();
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+        FindFirstObjectByType<AudioManager>().Play("splash");
         Destroy(gameObject);
     }
 

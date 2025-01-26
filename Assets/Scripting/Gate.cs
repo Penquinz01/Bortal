@@ -4,6 +4,7 @@ public class Gate : MonoBehaviour
 {
     [SerializeField] int id;
     [SerializeField] GameObject gateBreak;
+    [SerializeField] string clip;
     void Start()
     {
         GameManager.instance.Trigger += Open;
@@ -15,9 +16,10 @@ public class Gate : MonoBehaviour
     void Open(int id)
     {
         Debug.Log("Worked");
-        if(this.id == id)
+        if(this.id == id && gameObject != null)
         {
             Instantiate(gateBreak, gameObject.transform.position, Quaternion.identity);
+            FindFirstObjectByType<AudioManager>().Play(clip);
             Destroy(gameObject);
         }
     }
