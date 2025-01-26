@@ -74,11 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6115512416594602002, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_Color.b
-      value: 0.71383643
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6115512416594602002, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_Color.g
-      value: 0.8948551
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6115512416594602002, guid: e397a679a2179684a98817b3d4204eee, type: 3}
       propertyPath: m_Color.r
@@ -115,3 +115,4 @@ MonoBehaviour:
   impactRadius: 1.75
   impactForce: 2000
   splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
+  explosion: {fileID: 5597839664975442648, guid: 6677fe7eed24658419d787c6b89435e9, type: 3}
