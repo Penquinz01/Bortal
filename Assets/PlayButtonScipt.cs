@@ -6,6 +6,7 @@ public class PlayButtonScipt : MonoBehaviour
     [SerializeField] GameObject transitionObject;
     [SerializeField] GameObject text;
     private Animator transition;
+    [SerializeField] Animator bubble;
 
     private void Start()
     {
