@@ -1,7 +1,10 @@
 using UnityEngine;
+using System.Collections;
 
 public class Player : MonoBehaviour,IImpactable,IGravityAffector
 {
+    [SerializeField] GameObject transitionObject;
+    private Animator transition;
     Rigidbody2D rb;
 
     public void AntiGravity()
@@ -17,15 +20,27 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        transition = transitionObject.GetComponentInChildren<Animator>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Traps"))
         {
-            GameManager.instance.Die();
+            StartCoroutine(LoadLevel());
         }
     }
-    
 
-    
+    IEnumerator LoadLevel()
+    {
+        transition.SetTrigger("Start");
+        //AudioManager audio = FindFirstObjectByType<AudioManager>();
+        //if (audio != null)
+        //{
+        //    audio.Play("next");
+        //}
+        yield return new WaitForSeconds(1);
+        //FindFirstObjectByType<AudioManager>().Stop("walk");
+        GameManager.instance.Die();
+    }
+
 }

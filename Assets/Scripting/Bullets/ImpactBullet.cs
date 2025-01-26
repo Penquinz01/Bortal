@@ -31,12 +31,12 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-<<<<<<< HEAD
+
         rb = GetComponent<Rigidbody2D>();
-=======
+
         
-        rb= GetComponent<Rigidbody2D>();
->>>>>>> 779e53b36f3df74ef0dc09f6a277657b10d780b0
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,7 +47,9 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         }
         Impact();
         GameManager.instance.Shake();
+
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
         AudioManager audio = FindFirstObjectByType<AudioManager>();

@@ -1510,6 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c0130116af09344a4bc6b5446d5f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeAmt: 0.2
 --- !u!1001 &886294528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1756,6 +1757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8812798559554479919, guid: d1c76f9e3d86ed047a02838661df35d1, type: 3}
+      propertyPath: transitionObject
+      value: 
+      objectReference: {fileID: 354047470}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
