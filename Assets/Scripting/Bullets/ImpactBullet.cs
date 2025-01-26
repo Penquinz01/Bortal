@@ -35,8 +35,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         rb = GetComponent<Rigidbody2D>();
 
         
-        rb = GetComponent<Rigidbody2D>();
-
+        rb= GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,9 +46,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
         }
         Impact();
         GameManager.instance.Shake();
-
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
-
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
         AudioManager audio = FindFirstObjectByType<AudioManager>();
