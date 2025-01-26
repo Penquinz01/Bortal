@@ -1,27 +1,23 @@
-using System;
 using UnityEngine;
 using System.Collections;
-
-public class EndPoint : MonoBehaviour
+using TMPro;
+public class PlayButtonScipt : MonoBehaviour
 {
     [SerializeField] GameObject transitionObject;
+    [SerializeField] GameObject text;
     private Animator transition;
 
     private void Start()
     {
         transition = transitionObject.GetComponentInChildren<Animator>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnJump()
     {
-        if (collision.CompareTag("Player"))
-        {
-            StartCoroutine(LoadLevel());
-        }
+        text.SetActive(false);
+        StartCoroutine(LoadLevel());   
     }
 
-
-
-    public IEnumerator LoadLevel()
+    IEnumerator LoadLevel()
     {
         transition.SetTrigger("Start");
         AudioManager audio = GetComponent<AudioManager>();
@@ -29,9 +25,7 @@ public class EndPoint : MonoBehaviour
         {
             audio.Play("next");
         }
-        yield return new WaitForSeconds(1);
-        //FindFirstObjectByType<AudioManager>().Stop("walk");
+        yield return new WaitForSeconds(2);
         GameManager.instance.NextScene();
     }
-
 }
