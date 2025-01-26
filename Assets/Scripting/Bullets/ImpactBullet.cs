@@ -40,7 +40,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
-        Instantiate(splash, gameObject.transform.position, Quaternion.identity);
+        GameManager.instance.Shake();
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
         AudioManager audio = FindFirstObjectByType<AudioManager>();
