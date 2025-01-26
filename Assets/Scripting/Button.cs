@@ -1,14 +1,10 @@
 using System;
 using UnityEngine;
 
-public class Button : MonoBehaviour,IMettalic
+public class Button : MonoBehaviour
 {
     [SerializeField] int id;
 
-    public void Magnetise()
-    {
-        throw new NotImplementedException();
-    }
 
     public void Open()
     {
