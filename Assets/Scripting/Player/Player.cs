@@ -26,10 +26,6 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
             GameManager.instance.Die();
         }
     }
-    private void Update()
-    {
-        
-    }
     
 
     

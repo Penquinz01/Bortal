@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerMovement : MonoBehaviour,ITeleportable
 {
@@ -9,7 +8,6 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     [SerializeField] Transform Gun;
     Rigidbody2D rb;
     Vector2 direction;  
-    public bool IsTeleported = false;
     private bool isRight = true;
     float yValue;
     [SerializeField] float waitSec = 0.5f;
@@ -27,16 +25,7 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
         yValue = direction.y;
         direction.y = 0;
 
-        if (Grounded() && Mathf.Abs(direction.x) > 0.01f && !AudioManager.instance.IsPlaying("walk"))
-        {
-            Debug.Log("walking noise");
-            AudioManager.instance.Play("walk");
-        }
-        else if (!Grounded() || Mathf.Abs(direction.x) <= 0.01f)
-        {
-            Debug.Log("no walk");
-            AudioManager.instance.Stop("walk");
-        }
+        
         if ((isRight &&direction.x<0)|| !isRight && direction.x > 0)
         {
             changeDirection();
@@ -51,8 +40,25 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
             Gun.rotation = Quaternion.Euler(0, 0, 90 * multi - 90);
             Gun.localScale = new Vector3(1, multi, 1);
         }
+        if (Grounded() && Mathf.Abs(direction.x) > 0.01f && !AudioManager.instance.IsPlaying("walk"))
+        {
+            Debug.Log("walking noise");
+            if(AudioManager.instance != null)
+            {
+                AudioManager.instance.Play("walk");
+            }
+            
+        }
+        else if (!Grounded() || Mathf.Abs(direction.x) <= 0.01f)
+        {
+            Debug.Log("no walk");
+            if(AudioManager.instance != null)
+            {
+                AudioManager.instance.Stop("walk");
+            }
+            
+        }
     }
-    // Update is called once per frame
     void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(direction.x * speed,rb.linearVelocityY);
@@ -62,10 +68,6 @@ public class PlayerMovement : MonoBehaviour,ITeleportable
     {
         StartCoroutine(WaitFor(waitSec,loc));
         
-    }
-    public void setBool(bool value)
-    {
-        IsTeleported = value;
     }
     public void changeDirection()
     { 

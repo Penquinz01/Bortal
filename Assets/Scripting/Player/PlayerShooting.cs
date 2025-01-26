@@ -51,7 +51,11 @@ public class PlayerShooting : MonoBehaviour
             GameObject bullet = Instantiate(currentBulletObject, firePoint.position, Quaternion.identity);
             IBullet bull = bullet.GetComponent<IBullet>();
             bull.Fire(firePoint.right);
-            FindFirstObjectByType<AudioManager>().Play("shoot");
+            AudioManager audio = FindFirstObjectByType<AudioManager>();
+            if (audio != null)
+            { 
+                audio.Play("shoot");
+            }
         }
         
     }

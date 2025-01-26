@@ -49,7 +49,11 @@ public class AntiGravityBullet : MonoBehaviour,IBullet,ITeleportable
         }
         Impact();
         Instantiate(splash, gameObject.transform.position, Quaternion.identity);
-        FindFirstObjectByType<AudioManager>().Play("splash");
+        AudioManager audio = FindFirstObjectByType<AudioManager>();
+        if (audio != null)
+        {
+            audio.Play("splash");
+        }
         Destroy(gameObject);
     }
 
