@@ -133,7 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   Gun: {fileID: 465383448870711799}
-  IsTeleported: 1
   waitSec: 0.25
   rayLength: 0.51
   layer:
@@ -153,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalBullet: {fileID: 1418322224027747553, guid: d66a2666bbf7c6f43ace1b95cdad87a2, type: 3}
   firePoint: {fileID: 4906209250820547856}
-  bulletTimediff: 1
+  bulletTimediff: 0.6
   impactBullet: {fileID: 6715462477073215276, guid: dd950c93a37863445adfc0877a1e8972, type: 3}
   gravityBullet: {fileID: 446894624428027806, guid: e397a679a2179684a98817b3d4204eee, type: 3}
   magneticBullet: {fileID: 9141301553513317086, guid: b2b95207325f4004487b6cd9ba300bf3, type: 3}
