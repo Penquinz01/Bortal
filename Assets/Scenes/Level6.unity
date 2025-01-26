@@ -374,7 +374,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: fe53dcaa6bcb5d64b8913a5b830c5bae, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &295705990
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &884941242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1012836796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1533,6 +1533,10 @@ PrefabInstance:
     - target: {fileID: 6687239855271874489, guid: 4ea275c7c028b6440838c8b7f3529aaa, type: 3}
       propertyPath: m_Name
       value: metal_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764225143307696923, guid: 4ea275c7c028b6440838c8b7f3529aaa, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2185,7 +2189,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1971449725
 GameObject:
   m_ObjectHideFlags: 0
