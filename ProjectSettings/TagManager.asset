@@ -11,6 +11,7 @@ TagManager:
   - Traps
   - Gun
   - KeyBox
+  - SpikeBox
   layers:
   - Default
   - TransparentFX

@@ -7,8 +7,10 @@ public class Platform : MonoBehaviour
     [SerializeField] private float point1=1;
     [SerializeField] private float point2=10;
 
-    void Start()
+    private void Start()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("SpikeBox");
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         rb.linearVelocityX = speed;
     }
 

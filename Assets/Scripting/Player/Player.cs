@@ -12,7 +12,6 @@ public class Player : MonoBehaviour,IImpactable,IGravityAffector
 
     public void Imbact(Vector2 dir, float force)
     {
-        Debug.Log(force);
         rb.AddForce(force * dir);
     }
     private void Start()
