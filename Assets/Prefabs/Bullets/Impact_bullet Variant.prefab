@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368ca5e1a779d3f40beee5f4a5c649ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletForce: 8
-  impactRadius: 2
-  impactForce: 200
+  bulletForce: 10
+  impactRadius: 3
+  impactForce: 500
   splash: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
-  explosion: {fileID: 5597839664975442648, guid: 6677fe7eed24658419d787c6b89435e9, type: 3}
+  explosion: {fileID: 6654393617175418718, guid: fddaf23ea19e80041931ece153db9c8a, type: 3}
