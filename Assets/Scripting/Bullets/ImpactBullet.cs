@@ -41,7 +41,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
-        Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, 10f);
+        Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, shakeRadius);
         foreach (Collider2D col in cols) {
             if (col.CompareTag("Player"))
             {
