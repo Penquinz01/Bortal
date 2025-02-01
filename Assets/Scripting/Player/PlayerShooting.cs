@@ -9,7 +9,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private GameObject impactBullet;
     [SerializeField] private GameObject gravityBullet;
     [SerializeField] private GameObject magneticBullet;
-    private int currentBullet;
+    public int currentBullet { get; private set; }
     GameObject currentBulletObject;
     //currentBullet Code
     // 0 -> normal

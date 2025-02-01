@@ -9,7 +9,8 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
     [SerializeField] float impactForce = 200f;
     [SerializeField] GameObject splash;
     [SerializeField] GameObject explosion;
-    public void Fire(Vector2 direction)
+    [SerializeField] float shakeRadius = 10f;
+     public void Fire(Vector2 direction)
     {
         rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);
     }
@@ -40,7 +41,15 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
             return;
         }
         Impact();
-        GameManager.instance.Shake();
+        Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, 10f);
+        foreach (Collider2D col in cols) {
+            if (col.CompareTag("Player"))
+            {
+                GameManager.instance.Shake();
+            }
+        }
+
+        
 
         Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
