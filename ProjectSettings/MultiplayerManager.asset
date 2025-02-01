@@ -1,7 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!655991488 &1
+# MultiplayerManager configuration file for Unity.
+# This file defines settings for multiplayer management,
+# including object visibility and stripping types.
 MultiplayerManager:
-  m_ObjectHideFlags: 0
-  m_EnableMultiplayerRoles: 0
-  m_StrippingTypes: {}
+  m_ObjectHideFlags: 0             # Object hide flags (0 = visible; other values may hide the object in the editor)
+  m_EnableMultiplayerRoles: 0      # Flag to enable multiplayer roles (0 = disabled, 1 = enabled)
+  m_StrippingTypes: {}             # Dictionary for types to strip from the build (empty by default)
