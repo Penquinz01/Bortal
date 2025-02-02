@@ -51,7 +51,7 @@ public class ImpactBullet : MonoBehaviour,IBullet,ITeleportable
 
         
 
-        Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+        Instantiate(explosion, gameObject.transform.position,transform.rotation);
 
         AudioManager audio = FindFirstObjectByType<AudioManager>();
         if (audio != null)
